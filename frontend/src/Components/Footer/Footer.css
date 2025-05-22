@@ -1,0 +1,94 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 30px; /* Increased padding for more space */
+    gap: 30px; /* Increased space between elements */
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Slightly bigger gap */
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 50px; /* Larger logo size */
+    height: 50px;
+}
+
+.footer-logo p {
+    font-size: 28px; /* Larger font size for the logo text */
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Slightly bigger gap between links */
+    color: #555;
+    font-size: 16px; /* Increased font size for readability */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #000;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px; /* Slightly bigger gap between icons */
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-icons-container {
+    width: 35px;  /* Larger size for icons */
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icons-container img {
+    width: 22px; /* Larger icons */
+    height: 22px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons-container img:hover {
+    transform: scale(1.3); /* Slightly larger zoom effect */
+}
+
+.footer-copyright {
+    color: #777;
+    font-size: 14px; /* Increased font size for the copyright text */
+    text-align: center;
+}
+
+.footer-copyright hr {
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #ccc;
+    margin: 10px auto; /* More margin for better spacing */
+}

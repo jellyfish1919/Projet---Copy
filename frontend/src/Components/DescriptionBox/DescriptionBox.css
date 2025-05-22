@@ -1,0 +1,78 @@
+/* ===========================
+   Description Box Container
+   =========================== */
+   .descriptionbox {
+    margin: 80px auto;
+    max-width: 800px; /* Centered and responsive */
+    text-align: center;
+}
+
+/* ===========================
+   Navigation Tabs
+   =========================== */
+.descriptionbox-navigator {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 180px;
+    height: 60px;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    background: white;
+    transition: 0.3s ease;
+}
+
+.descriptionbox-nav-box:hover {
+    background: #ff4141;
+    color: white;
+    border-color: #ff4141;
+}
+
+.descriptionbox-nav-box-fade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 180px;
+    height: 60px;
+    border: 1px solid #d0d0d0;
+    color: #a0a0a0;
+    cursor: pointer;
+    background: #f9f9f9;
+    transition: 0.3s ease;
+}
+
+.descriptionbox-nav-box-fade:hover {
+    background: #ddd;
+}
+
+/* ===========================
+   Description Content
+   =========================== */
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #d0d0d0;
+    padding: 40px;
+    text-align: center; /* Center align text */
+}
+
+/* Paragraph Styles */
+.descriptionbox-description p {
+    font-size: 14px; /* Smaller text */
+    color: #656565;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto; /* Center paragraphs */
+}
+

@@ -1,0 +1,124 @@
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    justify-content: space-between; /* Space out left and right sections */
+    align-items: center;
+    padding: 0 10%; /* Add spacing */
+    position: relative;
+}
+
+/* Left Section */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Heading */
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Main Text */
+.hero-left p {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+/* Hand Icon with Text */
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-hand-icon img {
+    width: 50px;
+}
+
+/* Latest Collection Button */
+.hero-latest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: #ff4141;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0 20px;
+}
+
+/* Button Hover Effect */
+.hero-latest-btn:hover {
+    background: #e13434;
+}
+
+/* Arrow Icon Inside Button */
+.hero-latest-btn img {
+    width: 20px;  /* Make arrow smaller */
+    height: auto;
+}
+
+/* Right Section */
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img {
+    width: 90%;
+    max-width: 450px;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack items in mobile view */
+        text-align: center;
+        padding: 5%;
+        height: auto;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-left p {
+        font-size: 35px;
+    }
+
+    .hero-right img {
+        width: 80%;
+    }
+
+    .hero-latest-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

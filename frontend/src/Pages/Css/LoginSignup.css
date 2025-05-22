@@ -1,0 +1,116 @@
+
+.loginsignup {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background: #fce3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 🔹 Form Box */
+.loginsignup-container {
+    width: 400px;  /* Made smaller */
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* 🔹 Title */
+.loginsignup-container h1 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* 🔹 Input Fields Container */
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* 🔹 Input Fields */
+.loginsignup-fields input {
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.loginsignup-fields input:focus {
+    border-color: #ff4141;
+    box-shadow: 0 0 8px rgba(255, 65, 65, 0.2);
+}
+
+/* 🔹 Submit Button */
+.loginsignup-container button {
+    width: 100%;
+    height: 50px;
+    background: #ff4141;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.loginsignup-container button:hover {
+    background: #e63939;
+}
+
+/* 🔹 Login Text */
+.loginsignup-login {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.loginsignup-login span {
+    color: #ff4141;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 🔹 Agreement Checkbox */
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 480px) {
+    .loginsignup-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 20px;
+    }
+
+    .loginsignup-fields input,
+    .loginsignup-container button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .loginsignup-login {
+        font-size: 12px;
+    }
+}

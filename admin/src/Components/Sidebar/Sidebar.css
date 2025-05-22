@@ -1,0 +1,114 @@
+/* Sidebar Container */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Sidebar Item */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 16px;
+    margin: 0 10px;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    gap: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  /* Sidebar Item Hover Effect */
+  .sidebar-item:hover {
+    background-color: #e0e0e0;
+    transform: translateX(4px);
+  }
+  
+  /* Sidebar Item Image */
+  .sidebar-item img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Sidebar Item Text */
+  .sidebar-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Responsive Styles for Mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    /* Sidebar layout for small screens */
+    .sidebar {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      padding: 10px 16px;
+      position: fixed;
+      bottom: 0;
+      top: auto;
+      width: 100%;
+      box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.05);
+    }
+  
+    /* Adjust sidebar item layout for mobile */
+    .sidebar-item {
+      flex-direction: column;
+      padding: 8px 12px;
+      gap: 6px;
+      margin: 0;
+    }
+  
+    /* Adjust icon size for mobile */
+    .sidebar-item img {
+      height: 28px;
+      width: 28px;
+    }
+  
+    /* Adjust text font size for mobile */
+    .sidebar-item p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Tablet View (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    /* Sidebar layout for tablets */
+    .sidebar {
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 80px;
+      width: 100%;
+      padding: 10px 20px;
+    }
+  
+    /* Sidebar item layout for tablet */
+    .sidebar-item {
+      padding: 10px 14px;
+      gap: 12px;
+    }
+  
+    .sidebar-item img {
+      height: 30px;
+      width: 30px;
+    }
+  
+    .sidebar-item p {
+      font-size: 15px;
+    }
+  }
+  

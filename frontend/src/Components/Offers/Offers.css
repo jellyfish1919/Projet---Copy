@@ -1,0 +1,70 @@
+.offers {
+    width: 80%; /* Adjust width for better look */
+    height: 70vh; /* Slightly larger height for more balance */
+    display: flex;
+    margin: 50px auto; /* Centralize with some space around */
+    padding: 40px 60px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: left; /* Align to the left for a clean look */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.offers-left button {
+    width: 220px; /* Slightly smaller width */
+    height: 60px; /* Adjusted height */
+    border-radius: 35px;
+    background: linear-gradient(90deg, #ff4141, #ff6f6f); /* Gradient effect */
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.offers-left button:hover {
+    transform: scale(1.1); /* Slightly scale up */
+    background-color: #ff6f6f; /* Slight color change on hover */
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.offers-right img {
+    max-width: 90%; /* Ensure image is responsive */
+    height: auto;
+    border-radius: 10px; /* Rounded image corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around the image */
+}
